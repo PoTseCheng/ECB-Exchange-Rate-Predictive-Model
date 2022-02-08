@@ -180,7 +180,8 @@ save('data_eer.mat','rer_ppp','rer_gdp','rer_nfa','rer_tot','rer_eba','ca_eba','
 
 %% Saving the results to excel
 % export EBA regression tables
-if 0 
+save = 1
+if save == 1 
     regNames = {'GDP','NFA','TOT','EBA'};
     regTable = NaN(6,2*4);
     for i=1:4
